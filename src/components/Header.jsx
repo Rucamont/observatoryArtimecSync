@@ -1,58 +1,14 @@
-// import React from "react";
-// import Logo from "../resources/LogoMIT.png";
-// import "./css/navbar.css";
-// const Header = () => {
-//   return (
-//     <nav className="navbar" role="navigation" aria-label="main navigation" style={{ display: 'flex', alignItems: 'start' }}>
-//       <div className="navbar-brand">
-//         <a
-//           role="button"
-//           className="navbar-burger burger"
-//           aria-label="menu"
-//           aria-expanded="false"
-//           data-target="navbarBasicExample"
-//         >
-//           <span aria-hidden="true"></span>
-//           <span aria-hidden="true"></span>
-//           <span aria-hidden="true"></span>
-//         </a>
-//       </div>
-//       <div id="navbarBasicExample" className="navbar-menu">
-//         <div className="navbar-start">
-//           {/* Logotipo */}
-//           <a href="/" className="navbar-item-logo">
-//             <img
-//               className="img-responsive"
-//               src={Logo}
-//               alt="Logo"
-//               style={{ maxWidth: '13%', height: 'auto' }}
-//             />
-//           </a>
-          
-//           {/* Explora */}
-//           <a href="/explora" className="navbar-item">
-//             Explora
-//           </a>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Header;
 import React from 'react'; 
 import { Navbar, Nav } from 'react-bootstrap'; 
 import Logo from "../resources/LogoMIT.png";
-
+import { Outlet } from 'react-router-dom';
 function Header() { 
-	const logoUrl = 
-'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png'; 
 
-	return ( 
+	return ( <div>
 		<Navbar bg="dark" expand="lg"
 				variant="dark"
 				className="container-fluid"> 
-			<Navbar.Brand href="#home"> 
+			<Navbar.Brand href="home"> 
 				<img src={Logo} 
 					width="auto" height="60vh"
 					alt="Logo" /> 
@@ -63,18 +19,21 @@ function Header() {
 			<Navbar.Collapse 
 				id="basic-navbar-nav"> 
 				<Nav className="ml-auto"> 
-					<Nav.Link href="#pick"> 
+					<Nav.Link href="explora"> 
 						Explora 
 					</Nav.Link> 
-					<Nav.Link href="#suggest"> 
-						Suggest Article 
+					<Nav.Link href="info"> 
+						Información
 					</Nav.Link> 
-					<Nav.Link href="#write"> 
-						Write an Article 
+					<Nav.Link href="personas"> 
+						Personas
 					</Nav.Link> 
 				</Nav> 
 			</Navbar.Collapse> 
-		</Navbar> 
+		</Navbar>
+		<hr/>
+		<Outlet></Outlet>
+		</div> 
 	); 
 } 
 

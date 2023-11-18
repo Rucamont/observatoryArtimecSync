@@ -3,31 +3,34 @@ import React from "react";
 const Footer = () => {
   return (
     <footer style={footerStyle}>
-      <div>
-        <h3>Acerca de</h3>
-        <p>Información sobre nuestra empresa.</p>
-      </div>
-      <div>
-        <h3>Ayuda</h3>
-        <p>Preguntas frecuentes y soporte.</p>
-      </div>
-      <div>
-        <h3>Trabajo</h3>
-        <p>Oportunidades de empleo y carreras.</p>
-      </div>
-      <div>
-        <h3>Directrices de la comunidad</h3>
-        <p>Normas y reglas para la participación en la comunidad.</p>
-      </div>
-      <div>
-        <h3>Condiciones de uso</h3>
-        <p>Detalles sobre el uso de nuestro sitio web.</p>
-      </div>
-      <div>
-        <h3>Privacidad</h3>
-        <p>Nuestra política de privacidad.</p>
-      </div>
-    </footer>
+  <div>
+    <h3>Acerca de</h3>
+    <p>Observatorio de la Biodiversidad Animal</p>
+    <p>Proyecto multidisciplinario de la FIEC, FADCOM, FCV</p>
+  </div>
+  <div>
+    <h3>Colaboradores</h3>
+    <p>Facultad de Ingeniería en Electricidad y Computación (FIEC)</p>
+    <p>Facultad de Artes y Diseño de la Comunicación (FADCOM)</p>
+    <p>Facultad de Ciencias de la Vida (FCV)</p>
+    <p>Participantes externos y tutores</p>
+  </div>
+  <div>
+    <h3>Recursos</h3>
+    <p>Documentación y publicaciones</p>
+    <p>Enlaces a investigaciones y resultados</p>
+  </div>
+  <div>
+    <h3>Contacto</h3>
+    <p>Correo electrónico: info@observatoriobiodiversidad.com</p>
+    <p>Teléfono: [Número de contacto]</p>
+  </div>
+  <div>
+    <h3>Redes Sociales</h3>
+    <p>Síguenos en [enlaces a redes sociales]</p>
+  </div>
+</footer>
+
   );
 };
 
