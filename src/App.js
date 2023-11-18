@@ -1,25 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import Observatory from './routes/Observatory';
 
 function App() {
   return (
-    <><Header></Header><div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hola Mundo
-        </a>
-      </header>
-    </div></>
+    <Observatory></Observatory>
   );
 }
 
