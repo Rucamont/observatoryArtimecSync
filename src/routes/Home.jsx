@@ -10,7 +10,7 @@ const Home = () => {
             <Header />
             <img
                 src={Funcionamiento}
-                style={{ width: "100%", height: "auto", display: "block" }}
+                style={{ width: "90%", height: "80%", display: "block", margin: "auto" }}
                 alt="Funcionamiento"
             />
             <Footer />
