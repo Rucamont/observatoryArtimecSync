@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Funcionamiento from "../assets/presentacion.mp4";
+import Funcionamiento from "../resources/presentacion.mp4";
 import "../components/css/home.css";
 import Camara from "../resources/camara.jpeg";
 import S3ImageList from "../components/ListImage";
