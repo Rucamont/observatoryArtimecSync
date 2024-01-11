@@ -1,26 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
+// App.js
+import React from 'react';
 import Observatory from './routes/Observatory';
 import Home from './routes/Home';
+import EspecieDetalle from './routes/Especies';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
-  Navigate
-} from "react-router-dom";
 function App() {
   return (
-    <>
+    
       <Routes>
-      <Route path="/" element={<Header></Header>}/>
-      <Route path='/explora' element = {<Observatory></Observatory>}/>
-      <Route path='/home' element = {<Home></Home>}/>
-
+        <Route path="/explora" element={<Observatory />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/especies/:prefix/:nombreCientifico" element={<EspecieDetalle />} />
       </Routes>
-    </>
+    
   );
 }
 

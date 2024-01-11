@@ -1,6 +1,6 @@
 import React from 'react'; 
 import { Navbar, Nav } from 'react-bootstrap'; 
-import Logo from "../resources/LogoMIT.png";
+import Logo from "../resources/logo-prod.png";
 import { Outlet } from 'react-router-dom';
 function Header() { 
 
@@ -8,9 +8,9 @@ function Header() {
 		<Navbar bg="dark" expand="lg"
 				variant="dark"
 				className="container-fluid"> 
-			<Navbar.Brand href="home"> 
+			<Navbar.Brand href="/"> 
 				<img src={Logo} 
-					width="auto" height="60vh"
+					width="auto" height="50vh"
 					alt="Logo" /> 
 				
 			</Navbar.Brand> 
