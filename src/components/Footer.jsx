@@ -35,7 +35,7 @@ const Footer = () => {
 
 const footerStyle = {
   backgroundColor: "#333",
-  color: "#fff",
+  color: "#EEEEEE",
   padding: "2rem",
   display: "flex",
   justifyContent: "space-around",

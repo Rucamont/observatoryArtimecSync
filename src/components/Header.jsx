@@ -2,17 +2,17 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap'; 
 import Logo from "../resources/logo-prod.png";
 import { Outlet } from 'react-router-dom';
+// import "../components/css/header.css"; // Asegúrate de importar tu archivo CSS
 function Header() { 
 
 	return ( <div>
 		<Navbar bg="dark" expand="lg"
 				variant="dark"
-				className="container-fluid"> 
+				className="container-fluid">
 			<Navbar.Brand href="/"> 
 				<img src={Logo} 
 					width="auto" height="50vh"
 					alt="Logo" /> 
-				
 			</Navbar.Brand> 
 			<Navbar.Toggle 
 				aria-controls="basic-navbar-nav" /> 

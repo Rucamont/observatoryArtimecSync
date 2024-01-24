@@ -101,10 +101,7 @@ const Map = () => {
         `url(https://placekitten.com/g/${marker.properties.iconSize.join('/')}/)`;
       el.style.width = `${marker.properties.iconSize[0]}px`;
       el.style.height = `${marker.properties.iconSize[1]}px`;
-
-      // el.onclick = () => handleMarkerClick(marker);
-
-    
+  
       new maptilersdk.Marker(el)
         .setLngLat(marker.geometry.coordinates)
         .setPopup(new maptilersdk.Popup().setHTML(marker.properties.description))
@@ -114,6 +111,8 @@ const Map = () => {
         
     
     });
+
+    
 
     // // // Handle click event on the map
     // // map.on('click', () => {
